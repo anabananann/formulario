@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>EJEMPLO PRUEBA  </title>
+    <script>
+    function recibir(){
+        var nom=document.getElementById("nombre").value;
+        var apellidos=document.getElementById("apellidos").value;
+        var sexo=document.getElementById("sexo").value;
+        var telefono=document.getElementById("Telefono").value;
+        var email=document.getElementById("email").value;
+        var calle=document.getElementById("calle").value;
+        var col=document.getElementById("col").value;
+        var delega=document.getElementById("delega").value;
+        var password=document.getElementById("password").value;
+        document.write("Tu nombre es: "+ name + typeof name +  "<br> Tus apellidos son:"+ apellidos + typeof apellidos + "<br> Tu sexo es:"+ sexo + typeof sexo +"<br> Tu telefono es:"+ telefono + typeof telefono + "<br> Tu correo es:"+ email + typeof email + "<br> Tu calle es:"+ calle + typeof calle  + "<br> Tu colonia es:"+ col + typeof col +  "<br> Tu delegacion es:"+ delega + typeof delega +  "<br> La contraseña es:"+ password + typeof password  );
+        
+    }
+    </script>
+    </head>
+    <body>
+    <form name="formulario" netlify>
+        <label> Nombre: </label>
+        <input type="text" id="nombre" name="name" placeholder="Nombre" max="15"><br>
+        <label> Apellidos: </label>
+        <input type="text" id="apellidos" name="apellidos" placeholder="Apellido paterno Pellido materno" maxlength="30"><br>
+        <label> Sexo: </label><br>
+        <label> Masculino </label>
+        <input type="radio" id="sexo" name="sexo" value="Masculino" ><br>
+        <label> Femenino </label>
+        <input type="radio" id="sexo" name="sexo" value="Femenino" ><br>
+        <label> Telefono: </label>
+        <input type="tel" id="Telefono" name="telefono" required placeholder="555-555-555"><br>
+        <label> Correo: </label>
+        <input type="email" id="email" name="email" required placeholder="veronica@icel.edu.mx"><br>
+        <label> Direccion </label> <br>
+        <label> Calle y Numero </label><br>
+        <input type="text" id="calle" name="calle" placeholder="calle #1" maxlength="20"><br>
+        <input type="text" id="col" name="col" placeholder="colonia" maxlength="25"><br>
+        <label> Delegación </label>
+        <select name="delega" id="delega">
+            <option value="1"> 1. Guastavo a Madero
+            <option value="2"> 2. Venustiano Carranza
+            <option value="3"> 3. Cuautemoc
+            <option value="4" selected> 4. Coyacan
+            <option value="5"> 5. Alvaro Obregon
+            <option value="6"> 6. Xochimilco</select><br>
+       <label>Contraseña</label>
+         <input type="password" name="password" id="password" placeholder="contraseña">
+        <input type="button"name="enviar" value="Enviar" onclick="recibir();"/>
+        </form>
+    </body>
+</html>
